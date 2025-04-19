@@ -1,4 +1,4 @@
-import { grotesk } from "@/app/layout";
+import { grotesk } from "@/font";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -14,7 +14,6 @@ const ServiceCard = ({
   arrowColor,
   buttonText,
   hoverBgColor,
-  hoverArrowColor,
 }: {
   bgColor: string;
   title1: string;
@@ -25,7 +24,6 @@ const ServiceCard = ({
   arrowColor: string;
   buttonText: string;
   hoverBgColor: string;
-  hoverArrowColor: string;
 }) => {
   return (
     <div

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { grotesk, sans } from '@/app/layout'
+import { grotesk } from '@/font'
 import Image from 'next/image'
 import Button from './Button'
 

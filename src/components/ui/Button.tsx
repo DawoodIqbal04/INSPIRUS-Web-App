@@ -1,4 +1,4 @@
-import { grotesk } from '@/app/layout';
+import { grotesk } from '@/font';
 import Link from 'next/link'
 import React from 'react'
 

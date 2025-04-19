@@ -1,5 +1,4 @@
-import { grotesk, sans } from "@/app/layout";
-import Link from "next/link";
+import { grotesk, sans } from "@/font";
 import React from "react";
 import Button from "./ui/Button";
 import Image from "next/image";

@@ -1,4 +1,4 @@
-import { grotesk, sans } from "@/app/layout";
+import { grotesk, sans } from "@/font";
 import React from "react";
 import ServiceCard from "./ui/ServiceCard";
 
@@ -25,7 +25,6 @@ const Services = () => {
           image="/service01.svg"
           buttonText="dark"
           hoverBgColor="bg-primary"
-          hoverArrowColor="bg-primary"
         />
         <ServiceCard
           bgColor="bg-primary"
@@ -37,7 +36,6 @@ const Services = () => {
           image="/service02.svg"
           buttonText="dark"
           hoverBgColor="bg-[#E8E8E8]"
-          hoverArrowColor="bg-[#E8E8E8]"
         />
         <ServiceCard
           bgColor="bg-dark"
@@ -49,7 +47,6 @@ const Services = () => {
           image="/service03.svg"
           buttonText="white"
           hoverBgColor="bg-[#E8E8E8]"
-          hoverArrowColor="bg-[#E8E8E8]"
         />
         <ServiceCard
           bgColor="bg-[#E8E8E8]"
@@ -61,7 +58,6 @@ const Services = () => {
           image="/service04.svg"
           buttonText="dark"
           hoverBgColor="bg-primary"
-          hoverArrowColor="bg-primary"
         />
         <ServiceCard
           bgColor="bg-primary"
@@ -73,7 +69,6 @@ const Services = () => {
           image="/service05.svg"
           buttonText="dark"
           hoverBgColor="bg-[#E8E8E8]"
-          hoverArrowColor="bg-[#E8E8E8]"
         />
         <ServiceCard
           bgColor="bg-dark"
@@ -85,7 +80,6 @@ const Services = () => {
           image="/service06.svg"
           buttonText="white"
           hoverBgColor="bg-[#E8E8E8]"
-          hoverArrowColor="bg-[#E8E8E8]"
         />
       </div>
     </section>
