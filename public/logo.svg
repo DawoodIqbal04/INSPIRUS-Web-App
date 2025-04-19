@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="500" height="500">
+	<title>New Project</title>
+	<style>
+		.s0 { fill: #b9ff66 } 
+		.s1 { fill: #1e1e1e } 
+	</style>
+	<path id="Shape 1" fill-rule="evenodd" class="s0" d="m609 192v417h-417v-417z"/>
+	<path id="Shape 2" fill-rule="evenodd" class="s1" d="m609.2 193l-49.4 197.5 49.4 216.4-207.1-60.8-207.1 60.8 49.8-216.4-49.8-197.5 207.1 54.6z"/>
+</svg>
