@@ -1,3 +1,4 @@
+import CasesStudies from "@/components/CaseStudies";
 import Company from "@/components/Company";
 import Hero from "@/components/Hero";
 import Proposal from "@/components/Proposal";
@@ -10,6 +11,7 @@ export default function Home() {
       <Company />
       <Services />
       <Proposal />
+      <CasesStudies />
     </main>
   );
 }
