@@ -15,27 +15,28 @@ const Hero = () => {
       y: 100,
       duration: 1,
       ease: "power2.out",
-      delay: 1,
+      delay: 1.6,
       stagger: 0.1,
     });
     gsap.from(".herobutton", {
       y: 100,
-      duration: 1,
+      duration: 2,
       ease: "power2.out",
-      delay: 2,
+      delay: 1.6,
       opacity: 0,
     })
     gsap.from('.heroimage', {
-      duration: 2,
+      y: 200,
       scale: 0.95,
-      delay: 1.5,
-      opacity: 0,
       ease: 'power2.out',
+      duration: 1.5,
+      delay: 1.6,
+      opacity: 0
     })
   })
 
   return (
-    <section className="w-full h-[calc(100vh_-_112px)] flex in-center gap-3 mt-28 py-10">
+    <section className="hero w-full h-[calc(100vh_-_112px)] flex in-center gap-3 mt-28 py-10">
       <div className="w-[42vw] flex flex-col gap-4 mt-10">
         <div className="flex flex-col justify-start gap-3">
           <div className={`${grotesk.className} text-6xl font-[500]`}>
