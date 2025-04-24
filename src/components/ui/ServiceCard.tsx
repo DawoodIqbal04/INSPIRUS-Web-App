@@ -27,7 +27,7 @@ const ServiceCard = ({
 }) => {
   return (
     <div
-      className={`card relative w-[46.5vw] h-68 ${bgColor} rounded-[45px] border border-dark p-14 flex justify-between items-center drop-shadow-[0_6px_rgba(0,0,0,0.6)] overflow-hidden hover:[&>.child]:bottom-0 hover:[&>.child]:rounded-none`}
+      className={`card relative w-[46.5vw] h-68 ${bgColor} z-11 rounded-[45px] border border-dark p-14 flex justify-between items-center drop-shadow-[0_6px_rgba(0,0,0,0.6)] overflow-hidden hover:[&>.child]:bottom-0 hover:[&>.child]:rounded-none`}
     >
       <div className="w-full h-full z-10 flex items-center justify-between">
         <div className="flex flex-col items-start gap-16">
@@ -70,7 +70,7 @@ const ServiceCard = ({
       </div>
       <div
         style={{
-          transition: "all 0.3s ease-in-out",
+          transition: "all 0.4s ease-in-out",
         }}
         className={`child absolute w-full h-full ${hoverBgColor} bottom-[-100%] rounded-[50%] left-0`}
       ></div>

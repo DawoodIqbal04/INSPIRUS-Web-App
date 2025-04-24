@@ -16,7 +16,7 @@ const Company = () => {
     gsap.to('.overlay', {
       duration: 2,
       scaleX: 0,
-      ease: 'power2.out',
+      ease: 'power3.out',
       scrollTrigger: {
         trigger: '.overlay',
         start: 'top 75%',

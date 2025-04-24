@@ -26,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative flex flex-col justify-center mx-auto px-5 bg-whital">
+    <main className="relative flex flex-col justify-center mx-auto px-6 bg-whital">
       <Hero />
       <Company />
       <Services />
