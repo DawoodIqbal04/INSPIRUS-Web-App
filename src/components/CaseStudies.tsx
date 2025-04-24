@@ -1,6 +1,5 @@
 import { titles } from "@/data/data";
 import { grotesk, sans } from "@/font";
-import { color } from "motion/react";
 import Link from "next/link";
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
