@@ -7,6 +7,8 @@ import Proposal from "@/components/Proposal";
 import Services from "@/components/Services";
 import { useEffect } from "react";
 import Lenis from '@studio-freight/lenis'
+import WorkingProcess from "@/components/WorkingProcess";
+
 
 export default function Home() {
 
@@ -32,6 +34,7 @@ export default function Home() {
       <Services />
       <Proposal />
       <CasesStudies />
+      <WorkingProcess />
     </main>
   );
 }
