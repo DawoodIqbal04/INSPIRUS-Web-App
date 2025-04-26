@@ -1,23 +1,23 @@
-import { grotesk, sans } from "@/font";
 import React from "react";
 import ExtendBox from "./ui/ExtendBox";
+import { workingProcess } from "@/data/data";
+import Marker from "./ui/Marker";
 
 const WorkingProcess = () => {
   return (
-    <section className="pb-10">
-      <div className="flex items-center justify-start gap-10">
-        <h1 className={`text-4xl ${grotesk.className}`}>
-          <mark className="bg-primary px-2 rounded-lg">
-            Our Working Process
-          </mark>
-        </h1>
-        <p className={`${sans.className} tracking-wide`}>
-          Your Trusted Step-by-Step Roadmap to Turning Dreams
-          <br /> into Achievements
-        </p>
-      </div>
+    <section className="pb-20">
       <div>
-        <ExtendBox />
+        <Marker title="Our Case Studies" desc="Your Trusted Step-by-Step Roadmap to Turning Dreams into Achievements" />
+      </div>
+      <div className="flex flex-col items-center gap-8 mt-20">
+        {workingProcess.map((item, index) => (
+          <ExtendBox
+            key={index}
+            index={item.index}
+            title={item.title}
+            desc={item.desc}
+          />
+        ))}
       </div>
     </section>
   );

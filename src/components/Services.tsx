@@ -1,18 +1,12 @@
-import { grotesk, sans } from "@/font";
 import React from "react";
 import ServiceCard from "./ui/ServiceCard";
+import Marker from "./ui/Marker";
 
 const Services = () => {
   return (
     <section>
-      <div className="flex items-center justify-start gap-10">
-        <h1 className={`text-4xl ${grotesk.className}`}>
-          <mark className="bg-primary px-2 rounded-lg">Services</mark>
-        </h1>
-        <p className={`${sans.className} tracking-wide`}>
-          At our creative software agency, we offer a range of services to help
-          <br /> businesses grow and succeed online. These services include
-        </p>
+      <div>
+        <Marker title="Services" desc="At our creative software agency, we offer a range of services to help businesses grow and succeed online. These services include" />
       </div>
       <div className="grid grid-cols-2 gap-x-7 gap-y-10 py-20">
         <ServiceCard

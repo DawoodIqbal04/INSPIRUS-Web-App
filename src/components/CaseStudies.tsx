@@ -1,20 +1,15 @@
 import { titles } from "@/data/data";
-import { grotesk, sans } from "@/font";
+import { grotesk } from "@/font";
 import Link from "next/link";
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
+import Marker from "./ui/Marker";
 
 const CasesStudies = () => {
   return (
     <section className="py-20">
-      <div className="flex items-center justify-start gap-10">
-        <h1 className={`text-4xl ${grotesk.className}`}>
-          <mark className="bg-primary px-2 rounded-lg">Case Studies</mark>
-        </h1>
-        <p className={`${sans.className} tracking-wide`}>
-          Explore Real-Life Examples of Our Proven Digital Web Success
-          <br /> through Our Case Studies
-        </p>
+      <div>
+        <Marker title="Case Studies" desc="Explore Real-Life Examples of Our Proven Digital Web Success through Our Case Studies" />
       </div>
       <div className="py-20 flex items-center gap-0.5">
         {titles.map((card, index) => (
