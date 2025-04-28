@@ -9,19 +9,25 @@ const CasesStudies = () => {
   return (
     <section className="py-20">
       <div>
-        <Marker title="Case Studies" desc="Explore Real-Life Examples of Our Proven Digital Web Success through Our Case Studies" />
+        <Marker
+          title="Case Studies"
+          desc="Explore Real-Life Examples of Our Proven Digital Web Success through Our Case Studies"
+        />
       </div>
       <div className="py-20 flex items-center gap-0.5">
         {titles.map((card, index) => (
           <div
             key={index}
-            className={`${grotesk.className} group w-full h-[48vh] relative p-14 text-whital bg-dark rounded-[40px] overflow-hidden `}
+            className={`${grotesk.className} group w-full h-[48vh] relative p-14 text-whital bg-dark rounded-[40px] overflow-hidden border border-dark`}
           >
             <div className="parent w-fit h-full flex flex-col items-start justify-between relative z-10 ">
               <div className="text-white group-hover:text-dark line-clamp-5">
                 <p>{card.title}</p>
               </div>
-              <Link href={""} className="group-hover:text-dark flex items-center gap-3 text-primary">
+              <Link
+                href={""}
+                className="group-hover:text-dark flex items-center gap-3 text-primary"
+              >
                 <h4>Case Info</h4>
                 <FaArrowUp size={25} className=" rotate-54" />
               </Link>

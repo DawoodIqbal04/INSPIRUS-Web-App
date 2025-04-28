@@ -59,12 +59,12 @@ const ExtendBox = ({
             <span
               className={`${
                 isMoved ? "rotate-180" : "rotate-0"
-              } transition-transform font-bold duration-300`}
+              } transition-transform font-bold duration-400`}
             >
               {isMoved ? (
-                <AiOutlinePlus size={50} />
-              ) : (
                 <AiOutlineMinus size={50} />
+              ) : (
+                <AiOutlinePlus size={50} />
               )}
             </span>
           </div>

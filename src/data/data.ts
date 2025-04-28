@@ -1,3 +1,5 @@
+import { image } from "motion/react-client"
+
 export const logos = [
   {
     id: 1,
@@ -79,4 +81,51 @@ export const workingProcess = [
     title: 'Launch & Support',
     desc: 'We launch your product with precision and provide ongoing support. From optimization to updates, we`re with you every step of the way.'
   }
+]
+
+
+export const teamMembers = [
+  {
+    id: 1,
+    image: '/t1.webp',
+    name: 'Faizan Malik',
+    position: 'CEO & Founder',
+    desc: "Faizan leads the agency with 10+ years in tech innovation, and startup scaling. He is passionate about delivering high-impact digital solutions."
+  },
+  {
+    id: 2,
+    image: '/t2.webp',
+    name: 'Zara Dar',
+    position: 'UI/UX Designer',
+    desc: "Zara designs visually striking and user-centered experiences using Figma, and Webflow. Her work blends creativity to drive higher user engagement"
+  },
+  {
+    id: 3,
+    image: '/t3.webp',
+    name: 'Ayaan Khalid',
+    position: 'Frontend Developer',
+    desc: "Ayaan crafts high-performance, responsive web apps using Next.js, and modern frameworks. He focuses on creating seamless user experiences with pixel-perfect designs"
+  },
+  {
+    id: 4,
+    image: '/t4.webp',
+    name: 'Sana Tariq',
+    position: 'Project Manager',
+    desc: "Sana ensures smooth project delivery through leadership, and team coordination. She excels at managing timelines, and client expectations with precision."
+  },
+  {
+    id: 5,
+    image: '/t5.webp',
+    name: 'Bilal Asim',
+    position: 'Backend Developer',
+    desc: "Bilal specializes in building secure backend systems with Node.js and Django. He is dedicated to clean code practices and API optimization."
+  },
+  {
+    id: 6,
+    image: '/t6.webp',
+    name: 'Hania Shah',
+    position: 'Marketing Strategist',
+    desc: "Hania drives growth through data-driven marketing strategies, SEO, and content creation. She is passionate about building brand awareness and generating leads."
+  }
+
 ]
