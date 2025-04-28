@@ -17,7 +17,7 @@ const Team = () => {
       </div>
       <div className="w-full mt-20">
         <div className="w-full h-full grid grid-cols-3 gap-y-10 gap-x-10">
-          {teamMembers.map((member, index) => (
+          {teamMembers.map(({ name, image, position, desc}, index) => (
             <div
               key={index}
               className="w-[30vw] h-[65vh] rounded-[45px] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] "
@@ -25,17 +25,17 @@ const Team = () => {
               <div className="h-[50%] flex items-start justify-between ">
                 <div className="flex items-end gap-5 w-full">
                   <Image
-                    src={member.image}
-                    alt={member.name}
+                    src={image}
+                    alt={name}
                     height={100}
                     width={100}
                   />
                   <div className="flex flex-col items-start">
                     <h4 className={`${grotesk.className} text-lg font-medium `}>
-                      {member.name}
+                      {name}
                     </h4>
                     <p className={`${sans.className} text-sm`}>
-                      {member.position}
+                      {position}
                     </p>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ const Team = () => {
                 </div>
               </div>
               <div className=" h-[50%] w-full border-t border-dark ">
-                <p className={`${grotesk.className} mt-7`}>{member.desc} </p>
+                <p className={`${grotesk.className} mt-7`}>{desc} </p>
               </div>
             </div>
           ))}
