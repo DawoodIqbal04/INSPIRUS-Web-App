@@ -29,7 +29,7 @@ const Navbar = () => {
       delay: 1,
       opacity: 0,
     });
-    gsap.from("li", {
+    gsap.from(".leading-4", {
       y: 50,
       duration: 1,
       ease: "power2.out",

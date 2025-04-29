@@ -122,3 +122,31 @@ export const teamMembers = [
   }
 
 ]
+
+export const testimonials = [
+  {
+    name: 'John Doe',
+    title: 'CEO of Tech Innovations',
+    quote: 'The team at this agency transformed our digital presence. Their attention to detail and innovative creative solutions exceeded our expectations with quality.'
+  },
+  {
+    name: 'Jane Smith',
+    title: 'CMO of Creative Solutions',
+    quote: 'Working with this agency was a game-changer for us. Their expertise in UX design and development helped us achieve our goals faster than we imagined.'
+  },
+  {
+    name: 'Michael Johnson',
+    title: 'Founder of StartUp Hub',
+    quote: 'I was impressed by the level of professionalism and creativity this agency brought to the table. They truly understand the needs of modern businesses.'
+  },
+  {
+    name: 'Emily Davis',
+    title: 'Director of Marketing at Global Corp',
+    quote: 'The team delivered a stunning website that not only looks great but also performs exceptionally well. Highly recommend their services for Enterprises!'
+  },
+  {
+    name: 'David Wilson',
+    title: 'Product Manager at InnovateX',
+    quote: 'Their approach to project management and communication made the entire process smooth. I couldn\'t be happier with the results I am watiching at for a time.'
+  }
+]

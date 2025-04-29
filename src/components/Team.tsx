@@ -20,7 +20,7 @@ const Team = () => {
           {teamMembers.map(({ name, image, position, desc}, index) => (
             <div
               key={index}
-              className="w-[30vw] h-[65vh] rounded-[45px] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] "
+              className="w-[30vw] h-[65vh] rounded-[45px] bg-[#e8e8e8] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] "
             >
               <div className="h-[50%] flex items-start justify-between ">
                 <div className="flex items-end gap-5 w-full">

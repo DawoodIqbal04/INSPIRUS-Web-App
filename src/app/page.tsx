@@ -9,6 +9,8 @@ import { useEffect } from "react";
 import Lenis from '@studio-freight/lenis'
 import WorkingProcess from "@/components/WorkingProcess";
 import Team from "@/components/Team";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
@@ -37,6 +39,8 @@ export default function Home() {
       <CasesStudies />
       <WorkingProcess />
       <Team />
+      <Testimonials />
+      <Contact />
     </main>
   );
 }
