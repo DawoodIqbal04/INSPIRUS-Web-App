@@ -7,7 +7,7 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <section className="pt-20">
+    <section className="pt-20 bg-whital px-6">
       <div className="w-full h-[80vh] bg-dark rounded-t-[45px] p-14">
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center justify-center">

@@ -11,8 +11,6 @@ import WorkingProcess from "@/components/WorkingProcess";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
 
 
 export default function Home() {
@@ -43,7 +41,6 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Contact />
-      <Footer />
     </main>
   );
 }
