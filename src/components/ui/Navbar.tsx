@@ -29,7 +29,7 @@ const Navbar = () => {
       delay: 1,
       opacity: 0,
     });
-    gsap.from(".leading-4", {
+    gsap.from(".navLinks", {
       y: 50,
       duration: 1,
       ease: "power2.out",
@@ -58,19 +58,19 @@ const Navbar = () => {
       </div>
       <div className={`flex items-center justify-center ${grotesk.className} `}>
         <ul className="flex items-center justify-center gap-8 tracking-wide font-medium overflow-hidden">
-          <li className="overflow-hidden leading-4">
+          <li className=" navLinks">
             <Link href={""}>About Us</Link>
           </li>
-          <li className="overflow-hidden leading-4">
+          <li className=" navLinks">
             <Link href={""}>Services</Link>
           </li>
-          <li className="overflow-hidden leading-4">
+          <li className=" navLinks">
             <Link href={""}>Use Cases</Link>
           </li>
-          <li className="overflow-hidden leading-4">
+          <li className=" navLinks">
             <Link href={""}>Pricing</Link>
           </li>
-          <li className="overflow-hidden leading-4">
+          <li className=" navLinks">
             <Link href={""}>Blog</Link>
           </li>
         </ul>

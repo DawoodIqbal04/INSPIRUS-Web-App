@@ -27,7 +27,7 @@ const ServiceCard = ({
 }) => {
   return (
     <div
-      className={`card relative w-[46.5vw] h-68 ${bgColor} z-11 rounded-[45px] border border-dark p-14 flex justify-between items-center drop-shadow-[0_6px_rgba(0,0,0,0.6)] overflow-hidden hover:[&>.child]:bottom-0 hover:[&>.child]:rounded-none`}
+      className={`group relative w-[46.5vw] h-68 ${bgColor} z-11 rounded-[45px] border border-dark p-14 flex justify-between items-center drop-shadow-[0_6px_rgba(0,0,0,0.6)] overflow-hidden hover:[&>.child]:bottom-0 hover:[&>.child]:rounded-none`}
     >
       <div className="w-full h-full z-10 flex items-center justify-between">
         <div className="flex flex-col items-start gap-16">
@@ -48,7 +48,7 @@ const ServiceCard = ({
               >
                 <FaArrowUp
                   size={26}
-                  className="arrow rotate-45"
+                  className="rotate-45 group-hover:rotate-90 transition-transform "
                   color={arrowColor}
                 />
               </div>

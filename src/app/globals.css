@@ -31,11 +31,6 @@
   background-color: #B9FF66;
 }
 
-.card:hover .arrow {
-  transform: rotate(45deg);
-  transition: all 0.3s ease-in-out;
-}
-
 .radio::after {
   content: '';
   position: absolute;
@@ -52,4 +47,33 @@
 
 .radio:checked::after {
   transform: scale(0.6);
+}
+
+.navLinks::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 8%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLinks:hover::after {
+  width: 100%;
+}
+
+.footLinks::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 8%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.footLinks:hover::after {
+  width: 100%;
 }

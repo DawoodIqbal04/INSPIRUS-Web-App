@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<title>logo</title>
+	<style>
+		.s0 { fill: #b9ff66 } 
+		.s1 { fill: #dedede } 
+	</style>
+	<path id="Shape 1" fill-rule="evenodd" class="s0" d="m435.9 64v371.9h-371.9v-371.9z"/>
+	<path id="Shape 2" fill-rule="evenodd" class="s1" d="m436.1 64.9l-44.1 176.1 44.1 193-184.7-54.2-184.7 54.2 44.4-193-44.4-176.1 184.7 48.7z"/>
+</svg>
