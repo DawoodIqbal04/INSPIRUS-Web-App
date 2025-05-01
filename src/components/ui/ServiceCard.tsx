@@ -48,7 +48,7 @@ const ServiceCard = ({
               >
                 <FaArrowUp
                   size={26}
-                  className="rotate-45 group-hover:rotate-90 transition-transform "
+                  className="rotate-45 group-hover:rotate-90 transition-transform duration-400"
                   color={arrowColor}
                 />
               </div>

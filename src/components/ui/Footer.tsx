@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
         </div>
         <div className={`${grotesk.className} w-full border-t text-white border-white mt-10 pt-5 flex items-center justify-between` }>
-            <h1 className=" group">2025 INSPIRUS - Made With 🤍 By <Link target="_blank" href={'https://dawood-iqbal.vercel.app'} className="underline group-hover:text-primary">Dawood</Link></h1>
+            <h1 className=" group">2025 INSPIRUS - Made With 💚 By <Link target="_blank" href={'https://dawood-iqbal.vercel.app'} className="underline group-hover:text-primary">Muhammad Dawood Iqbal</Link></h1>
             <h1></h1>
         </div>
       </div>
