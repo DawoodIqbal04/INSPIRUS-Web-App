@@ -6,7 +6,10 @@ const Services = () => {
   return (
     <section>
       <div>
-        <Marker title="Services" desc="At our creative software agency, we offer a range of services to help businesses grow and succeed online. These services include" />
+        <Marker
+          title="Services"
+          desc="At our creative software agency, we offer a range of services to help businesses grow and succeed online. These services include"
+        />
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-x-7 gap-y-10 py-20">
         <ServiceCard
