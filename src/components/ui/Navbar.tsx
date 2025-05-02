@@ -83,9 +83,7 @@ const Navbar = () => {
         opacity: 0,
         duration: 1.5,
         ease: "power2.inOut",
-      })
-
-
+      });
     } else {
       gsap.to(topline.current, {
         rotate: 0,
@@ -116,7 +114,7 @@ const Navbar = () => {
         opacity: 1,
         duration: -0.5,
         ease: "power2.inOut",
-      })
+      });
     }
   };
 
@@ -181,7 +179,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div ref={borderRef} className="flex flex-col items-start lg:hidden w-full h-[30vh] rounded-2xl border border-dark ">
+      <div
+        ref={borderRef}
+        className="flex flex-col items-start lg:hidden w-full h-[30vh] rounded-2xl border border-dark "
+      >
         <div className={`flex items-start ${grotesk.className} `}>
           <ul className="flex flex-col items-start justify-center gap-4 text-xl px-10 py-5 font-medium">
             <div className="overflow-hidden">

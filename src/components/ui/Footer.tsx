@@ -76,20 +76,42 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full flex lg:flex-row flex-col items-center justify-between lg:mt-10 md:mt-16 ">
-            <div className={`${grotesk.className} lg:w-[25%] text-white flex flex-col lg:items-start items-center gap-5`}>
-                <h1 className="text-primary text-2xl">Contact Us</h1>
-                <p>Email: examplemail.com</p>
-                <p>Phone: +123 456 789</p>
-                <p>Address: 1234 Street Name, City Name, Country Name</p>
-            </div>
-            <div className="lg:w-[65%] w-full lg:mt-0 mt-20 h-48 px-10 flex justify-between items-center rounded-2xl bg-[#292A32] ">
-              <input type="text" placeholder="Email" className="w-[50%] py-5 px-10 text-white focus:outline-none rounded-2xl border border-whital" />
-              <Button link="" otherClass=" w-[45%] h-16 rounded-lg bg-primary text-dark " title="Subscribe To News" secondColor="bg-white" />
-            </div>
+          <div
+            className={`${grotesk.className} lg:w-[25%] text-white flex flex-col lg:items-start items-center gap-5`}
+          >
+            <h1 className="text-primary text-2xl">Contact Us</h1>
+            <p>Email: examplemail.com</p>
+            <p>Phone: +123 456 789</p>
+            <p>Address: 1234 Street Name, City Name, Country Name</p>
+          </div>
+          <div className="lg:w-[65%] w-full lg:mt-0 mt-20 h-48 px-10 flex justify-between items-center rounded-2xl bg-[#292A32] ">
+            <input
+              type="text"
+              placeholder="Email"
+              className="w-[50%] py-5 px-10 text-white focus:outline-none rounded-2xl border border-whital"
+            />
+            <Button
+              link=""
+              otherClass=" w-[45%] h-16 rounded-lg bg-primary text-dark "
+              title="Subscribe To News"
+              secondColor="bg-white"
+            />
+          </div>
         </div>
-        <div className={`${grotesk.className} w-full border-t text-white border-white lg:mt-10 mt-20 pt-5 flex items-center justify-center` }>
-            <h1 className=" group">2025 INSPIRUS - Made With 💚 By <Link target="_blank" href={'https://dawood-iqbal.vercel.app'} className="underline group-hover:text-primary">Muhammad Dawood Iqbal</Link></h1>
-            <h1></h1>
+        <div
+          className={`${grotesk.className} w-full border-t text-white border-white lg:mt-10 mt-20 pt-5 flex items-center justify-center`}
+        >
+          <h1 className=" group">
+            2025 INSPIRUS - Made With 💚 By{" "}
+            <Link
+              target="_blank"
+              href={"https://dawood-iqbal.vercel.app"}
+              className="underline group-hover:text-primary"
+            >
+              Muhammad Dawood Iqbal
+            </Link>
+          </h1>
+          <h1></h1>
         </div>
       </div>
     </section>

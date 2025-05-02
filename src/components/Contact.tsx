@@ -5,7 +5,6 @@ import Button from "./ui/Button";
 import Image from "next/image";
 
 const Contact = () => {
-
   return (
     <section className="py-20">
       <div>
@@ -15,7 +14,9 @@ const Contact = () => {
         />
       </div>
       <div className="w-full lg:min-h-[80vh] bg-[#e8e8e8] rounded-[45px] mt-20 p-20 relative ">
-        <div className={`${grotesk.className} flex flex-col gap-5 h-full lg:w-[50%] w-full`}>
+        <div
+          className={`${grotesk.className} flex flex-col gap-5 h-full lg:w-[50%] w-full`}
+        >
           <div className="flex flex-col items-start gap-2">
             <label htmlFor="name" aria-required>
               Name*
@@ -57,8 +58,14 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="lg:flex hidden"> 
-          <Image src={'/contactImage.svg'} alt="Contact Image" width={390} height={500} className="absolute right-0 top-0  object-cover" />
+        <div className="lg:flex hidden">
+          <Image
+            src={"/contactImage.svg"}
+            alt="Contact Image"
+            width={390}
+            height={500}
+            className="absolute right-0 top-0  object-cover"
+          />
         </div>
       </div>
     </section>

@@ -7,22 +7,20 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const Company = () => {
-
-
   useGSAP(() => {
-    gsap.to('.overlay', {
+    gsap.to(".overlay", {
       duration: 2,
       scaleX: 0,
-      ease: 'power3.out',
+      ease: "power3.out",
       scrollTrigger: {
-        trigger: '.overlay',
-        start: 'top 75%',
-      }
-    })
-}, []);
+        trigger: ".overlay",
+        start: "top 75%",
+      },
+    });
+  }, []);
 
   return (
     <div className="lg:py-40 py-26 relative">
@@ -30,9 +28,11 @@ const Company = () => {
         {logos.map((logo, idx) => (
           <div
             key={idx}
-            className={`w-max h-max relative overflow-hidden ${logo.id == 1 && "mr-10"} ${
-              logo.id == 2 && "-mr-9 -ml-18"
-            } ${logo.id == 3 && "-mr-5"} ${logo.id == 4 && "-mr-6"}`}
+            className={`w-max h-max relative overflow-hidden ${
+              logo.id == 1 && "mr-10"
+            } ${logo.id == 2 && "-mr-9 -ml-18"} ${logo.id == 3 && "-mr-5"} ${
+              logo.id == 4 && "-mr-6"
+            }`}
           >
             <Image
               src={logo.src}
@@ -43,7 +43,10 @@ const Company = () => {
                 logo.id == 1 && "h-14 w-14"
               } grayscale hover:grayscale-0 `}
             />
-            <div style={{transformOrigin: 'right'}} className="overlay absolute bg-whital h-full w-full top-0 left-0"></div>
+            <div
+              style={{ transformOrigin: "right" }}
+              className="overlay absolute bg-whital h-full w-full top-0 left-0"
+            ></div>
           </div>
         ))}
       </div>
