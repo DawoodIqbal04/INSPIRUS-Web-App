@@ -16,11 +16,11 @@ const Team = () => {
         />
       </div>
       <div className="w-full mt-20">
-        <div className="w-full h-full grid grid-cols-3 gap-y-10 gap-x-10">
+        <div className="w-full h-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 gap-x-10">
           {teamMembers.map(({ name, image, position, desc}, index) => (
             <div
               key={index}
-              className="w-[30vw] h-[65vh] rounded-[45px] bg-[#e8e8e8] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] "
+              className="lg:w-[30vw] lg:h-[65vh] rounded-[45px] bg-[#e8e8e8] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] "
             >
               <div className="h-[50%] flex items-start justify-between ">
                 <div className="flex items-end gap-5 w-full">

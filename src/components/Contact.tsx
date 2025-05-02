@@ -14,8 +14,8 @@ const Contact = () => {
           desc="Get in Touch with Us and Let's Start Building Your Digital Future Together!"
         />
       </div>
-      <div className="w-full min-h-[80vh] bg-[#e8e8e8] rounded-[45px] mt-20 p-20 relative ">
-        <div className={`${grotesk.className} flex flex-col gap-5 mt-10 h-full w-[50%]`}>
+      <div className="w-full lg:min-h-[80vh] bg-[#e8e8e8] rounded-[45px] mt-20 p-20 relative ">
+        <div className={`${grotesk.className} flex flex-col gap-5 h-full lg:w-[50%] w-full`}>
           <div className="flex flex-col items-start gap-2">
             <label htmlFor="name" aria-required>
               Name*
@@ -24,7 +24,7 @@ const Contact = () => {
               type="text"
               placeholder="Name"
               name="name"
-              className="px-8 py-5 w-[90%] bg-white focus:outline-none border border-dark rounded-2xl"
+              className="px-8 py-5 lg:w-[90%] w-full bg-white focus:outline-none border border-dark rounded-2xl"
             />
           </div>
           <div className="flex flex-col items-start gap-2">
@@ -35,7 +35,7 @@ const Contact = () => {
               type="email"
               placeholder="Email"
               name="email"
-              className="px-8 py-5 w-[90%] bg-white focus:outline-none border border-dark rounded-2xl"
+              className="px-8 py-5 lg:w-[90%] w-full bg-white focus:outline-none border border-dark rounded-2xl"
             />
           </div>
           <div className="flex flex-col items-start gap-2">
@@ -45,7 +45,7 @@ const Contact = () => {
             <textarea
               placeholder="Massege"
               name="mass"
-              className="px-8 py-5 w-[90%] bg-white focus:outline-none border border-dark rounded-2xl"
+              className="px-8 py-5 lg:w-[90%] w-full bg-white focus:outline-none border border-dark rounded-2xl"
             />
           </div>
           <div>
@@ -53,11 +53,11 @@ const Contact = () => {
               link=""
               title="Send"
               secondColor="bg-primary"
-              otherClass="w-[90%] h-16 bg-dark text-white hover:text-dark rounded-lg"
+              otherClass="lg:w-[90%] w-full h-16 bg-dark text-white hover:text-dark rounded-lg"
             />
           </div>
         </div>
-        <div> 
+        <div className="lg:flex hidden"> 
           <Image src={'/contactImage.svg'} alt="Contact Image" width={390} height={500} className="absolute right-0 top-0  object-cover" />
         </div>
       </div>

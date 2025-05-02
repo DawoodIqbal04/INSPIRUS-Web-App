@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import gsap from "gsap";
 import { grotesk } from "@/font";
@@ -12,6 +12,15 @@ const ExtendBox = ({
   title: string;
   desc: string;
 }) => {
+  let height: string | number;
+  useEffect(() => {
+    if (window.innerWidth >= 1024) {
+      height = 52 + "vh";
+    } else if (window.innerWidth >= 768) {
+      height = 28 + "vh";
+    }
+  });
+
   const boxRef = useRef(null);
   const animationRef = useRef<gsap.core.Tween | null>(null);
   const [isMoved, setIsMoved] = useState(false);
@@ -19,7 +28,7 @@ const ExtendBox = ({
   const handleClick = () => {
     if (!animationRef.current) {
       animationRef.current = gsap.to(boxRef.current, {
-        height: "52vh",
+        height,
         duration: 0.4,
         paused: true,
         ease: "power4.InOut",
@@ -37,7 +46,7 @@ const ExtendBox = ({
     <div
       onClick={() => setIsMoved(!isMoved)}
       ref={boxRef}
-      className={` relative w-full bg-[#E8E8E8] h-[28vh]  ${
+      className={` relative w-full bg-[#E8E8E8] lg:h-[28vh]  ${
         grotesk.className
       } ${
         isMoved ? "bg-primary" : "bg-[#E8E8E8]"

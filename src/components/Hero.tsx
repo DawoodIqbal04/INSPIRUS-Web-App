@@ -36,28 +36,28 @@ const Hero = () => {
   })
 
   return (
-    <section className="hero w-full h-[calc(100vh_-_112px)] flex in-center gap-3 mt-28 py-10">
-      <div className="w-[42vw] flex flex-col gap-4 mt-10">
+    <section className="hero w-full lg:h-[calc(100vh_-_112px)] min-h-[50vh] flex lg:item-center items-center gap-3 mt-28 lg:py-10">
+      <div className="lg:w-[42vw] w-[70vw] flex flex-col gap-4 mt-10">
         <div className="flex flex-col justify-start gap-3">
-          <div className={`${grotesk.className} text-6xl font-[500]`}>
-            <div className="overflow-hidden leading-16">
+          <div className={`${grotesk.className} lg:text-6xl text-5xl font-[500]`}>
+            <div className="overflow-hidden lg:leading-16 leading-14 ">
               <h1 className="header">Turning Digital</h1>
             </div>
-            <div className="overflow-hidden leading-16">
+            <div className="overflow-hidden lg:leading-16 leading-14 ">
               <h1 className="header">Dreams In To The</h1>
             </div>
-            <div className="overflow-hidden leading-16">
+            <div className="overflow-hidden lg:leading-16 leading-14 ">
               <h1 className="header">Thriving Visions</h1>
             </div>
           </div>
-          <div className={`${sans.className} text-lg flex flex-col items-start gap-2`}>
-            <div className="overflow-hidden leading-5">
+          <div className={`${sans.className} text-lg flex flex-col items-start lg:gap-2`}>
+            <div className="overflow-hidden lg:leading-5">
               <p className="subheader">Our digital software agency helps businesses grow and</p>
             </div>
-            <div className="overflow-hidden leading-5">
+            <div className="overflow-hidden lg:leading-5">
               <p className="subheader">succeed online through a range of services including Web</p>
             </div>
-            <div className="overflow-hidden leading-5">
+            <div className="overflow-hidden lg:leading-5">
               <p className="subheader">Development, E-commerce Website and UI/ UX Design.</p>
             </div>
           </div>

@@ -14,13 +14,13 @@ const CasesStudies = () => {
           desc="Explore Real-Life Examples of Our Proven Digital Web Success through Our Case Studies"
         />
       </div>
-      <div className="py-20 flex items-center gap-0.5">
+      <div className="py-20 flex lg:flex-row flex-col items-center gap-0.5">
         {titles.map((card, index) => (
           <div
             key={index}
-            className={`${grotesk.className} group w-full h-[48vh] relative p-14 text-whital bg-dark rounded-[40px] overflow-hidden border border-dark`}
+            className={`${grotesk.className} group w-full lg:h-[48vh] relative p-14 text-whital bg-dark rounded-[40px] overflow-hidden border border-dark`}
           >
-            <div className="parent w-fit h-full flex flex-col items-start justify-between relative z-10 ">
+            <div className="parent w-fit h-full flex flex-col items-start justify-between lg:gap-0 gap-5 relative z-10 ">
               <div className="text-white group-hover:text-dark line-clamp-5">
                 <p>{card.title}</p>
               </div>

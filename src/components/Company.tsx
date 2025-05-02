@@ -25,8 +25,8 @@ const Company = () => {
 }, []);
 
   return (
-    <div className="py-40 relative">
-      <div className="h-[5vw] flex gap-16 items-center justify-center overflow-hidden relative backdrop-grayscale">
+    <div className="lg:py-40 py-26 relative">
+      <div className="h-[5vw] flex gap-16  items-center justify-center overflow-hidden relative backdrop-grayscale">
         {logos.map((logo, idx) => (
           <div
             key={idx}

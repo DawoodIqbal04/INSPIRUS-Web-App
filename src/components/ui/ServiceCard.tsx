@@ -27,10 +27,10 @@ const ServiceCard = ({
 }) => {
   return (
     <div
-      className={`group relative w-[46.5vw] h-68 ${bgColor} z-11 rounded-[45px] border border-dark p-14 flex justify-between items-center drop-shadow-[0_6px_rgba(0,0,0,0.6)] overflow-hidden hover:[&>.child]:bottom-0 hover:[&>.child]:rounded-none`}
+      className={`group relative lg:w-[46.5vw] w-full lg:h-68 h-[35vh] ${bgColor} z-11 rounded-[45px] border border-dark lg:p-14 p-10 flex justify-between items-center drop-shadow-[0_6px_rgba(0,0,0,0.6)] overflow-hidden hover:[&>.child]:bottom-0 hover:[&>.child]:rounded-none`}
     >
       <div className="w-full h-full z-10 flex items-center justify-between">
-        <div className="flex flex-col items-start gap-16">
+        <div className="flex flex-col items-start lg:gap-16 gap-40 w-[50%] ">
           <div className={`${grotesk.className} title`}>
             <h1 className="title flex flex-col text-lg">
               <mark className={`marker px-2 rounded-md w-max bg-${markBg}`}>
@@ -58,7 +58,7 @@ const ServiceCard = ({
             </Link>
           </div>
         </div>
-        <div className="h-44 w-48 object-center object-cover">
+        <div className="lg:h-44 lg:w-48 object-center object-cover">
           <Image
             src={image}
             alt=""
