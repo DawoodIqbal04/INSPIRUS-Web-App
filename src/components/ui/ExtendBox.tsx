@@ -18,6 +18,8 @@ const ExtendBox = ({
       height = 52 + "vh";
     } else if (window.innerWidth >= 768) {
       height = 28 + "vh";
+    } else {
+      height = 55 + "vh";
     }
   });
 
@@ -50,15 +52,15 @@ const ExtendBox = ({
         grotesk.className
       } ${
         isMoved ? "bg-primary" : "bg-[#E8E8E8]"
-      } border border-dark px-16 transition-transform duration-500 origin-bottom flex flex-col items-center justify-center overflow-hidden shadow-[0_6px_rgba(0,0,0,0.8)] rounded-[45px]`}
+      } border border-dark md:px-16 px-8 transition-transform duration-500 origin-bottom flex flex-col items-center justify-center overflow-hidden shadow-[0_6px_rgba(0,0,0,0.8)] md:rounded-[45px] rounded-4xl`}
     >
       <div
         onClick={handleClick}
         className=" flex flex-col py-12 items-center justify-between  w-full h-full"
       >
         <div className="flex items-center justify-between w-full">
-          <div className={`flex items-center gap-5`}>
-            <h1 className={`text-7xl`}>0{index}</h1>
+          <div className={`flex items-center md:gap-5 gap-3`}>
+            <h1 className={`md:text-7xl text-4xl`}>0{index}</h1>
             <p>{title}</p>
           </div>
           <div
@@ -78,7 +80,7 @@ const ExtendBox = ({
             </span>
           </div>
         </div>
-        <div className="absolute top-43 mx-16 border-t-2 pt-7 border-dark">
+        <div className="absolute top-43 md:mx-16 mx-8 border-t-2 pt-7 border-dark">
           <p>{desc}</p>
         </div>
       </div>

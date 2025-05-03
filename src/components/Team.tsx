@@ -22,8 +22,8 @@ const Team = () => {
               key={index}
               className="lg:w-[30vw] lg:h-[65vh] rounded-[45px] bg-[#e8e8e8] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] "
             >
-              <div className="h-[50%] flex items-start justify-between ">
-                <div className="flex items-end gap-5 w-full">
+              <div className="h-[50%] w-full flex gap-28 md:items-start md:justify-between ">
+                <div className="flex md:flex-row flex-col items-end md:gap-5 gap-1 w-full">
                   <Image src={image} alt={name} height={100} width={100} />
                   <div className="flex flex-col items-start">
                     <h4 className={`${grotesk.className} text-lg font-medium `}>

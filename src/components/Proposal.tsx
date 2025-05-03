@@ -6,8 +6,8 @@ import Image from "next/image";
 const Proposal = () => {
   return (
     <section className="relative py-20">
-      <div className=" w-full lg:h-84 h-[38vh] flex items-center justify-between bg-[#E8E8E8] rounded-[38px] p-16">
-        <div className="flex flex-col items-start gap-5 lg:w-[50%] w-[40%] ">
+      <div className=" w-full lg:h-84 md:h-[38vh] h-[55vh] flex items-center justify-between bg-[#E8E8E8] rounded-[38px] p-16">
+        <div className="flex flex-col items-start md:text-left gap-5 lg:w-[50%] md:w-[40%] ">
           <h1 className={`${grotesk.className} text-3xl font-semibold`}>
             Let&apos;s make things happen
           </h1>
@@ -31,7 +31,7 @@ const Proposal = () => {
           alt="image"
           height={200}
           width={800}
-          className="absolute lg:-top-35 lg:-right-10 -top-30 -right-45 z-10"
+          className="absolute md:flex hidden lg:-top-35 lg:-right-10 -top-30 -right-45 z-10"
         />
       </div>
     </section>

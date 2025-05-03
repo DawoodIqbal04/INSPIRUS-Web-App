@@ -14,7 +14,7 @@ const CasesStudies = () => {
           desc="Explore Real-Life Examples of Our Proven Digital Web Success through Our Case Studies"
         />
       </div>
-      <div className="py-20 flex lg:flex-row flex-col items-center gap-0.5">
+      <div className="py-20 flex lg:flex-row flex-col items-center md:gap-0.5 gap-1">
         {titles.map((card, index) => (
           <div
             key={index}

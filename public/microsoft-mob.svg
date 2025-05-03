@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+	<title>microsoft</title>
+	<style>
+		.s0 { fill: #f1511b } 
+		.s1 { fill: #80cc28 } 
+		.s2 { fill: #00adef } 
+		.s3 { fill: #fbbc09 } 
+	</style>
+	<path class="s0" d="m104.9 103.9h-104.9v-104.9h104.9z"/>
+	<path class="s1" d="m220.7 103.9h-104.9v-104.9h104.9z"/>
+	<path class="s2" d="m104.9 219.7h-104.9v-104.9h104.9z"/>
+	<path class="s3" d="m220.7 219.7h-104.9v-104.9h104.9z"/>
+</svg>

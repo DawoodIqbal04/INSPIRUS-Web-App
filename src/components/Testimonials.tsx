@@ -12,7 +12,7 @@ const Testimonials = () => {
           desc="Discover how our innovative solutions have empowered clients to bring bold ideas to life and elevate their digital presence."
         />
       </div>
-      <div className="w-full flex flex-col justify-evenly lg:min-h-[90vh] h-[60vh] bg-dark rounded-[45px] overflow-hidden mt-20 ">
+      <div className="w-full flex flex-col justify-evenly lg:min-h-[90vh] md:h-[60vh] bg-dark rounded-[45px] overflow-hidden mt-20 ">
         <div>
           <InfiniteMovingCards
             items={testimonials}
