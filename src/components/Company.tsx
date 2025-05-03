@@ -19,6 +19,16 @@ const Company = () => {
         trigger: ".overlay",
         start: "top 75%",
       },
+
+    });
+    gsap.to(".overlays", {
+      duration: 2,
+      scaleX: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".overlays",
+        start: "top 90%",
+      },
     });
     gsap.to(".overlays", {
       duration: 2,
@@ -54,31 +64,7 @@ const Company = () => {
             />
             <div
               style={{ transformOrigin: "right" }}
-              className="overlay absolute bg-whital h-full w-full md:flex hidden top-0 left-0"
-            ></div>
-          </div>
-        ))}
-      </div>
-      <div className="w-full h-[25vh] md:hidden grid grid-cols-3 gap-x-10 gap-y-8 items-center relative">
-        {logosMob.map((logo, idx) => (
-          <div
-            key={idx}
-            className={` relative  ${logo.id == 1 && "w-12 h-12"} ${
-              logo.id == 2 && "w-12 h-12"
-            } ${logo.id == 4 && "w-14 h-14"} ${
-              logo.id == 7 && "inset-x-32 -inset-y-7 "
-            } `}
-          >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              height={100}
-              width={120}
-              className={` grayscale hover:grayscale-0 `}
-            />
-            <div
-              style={{ transformOrigin: "right" }}
-              className="overlays absolute bg-accent h-full w-full top-0 left-0"
+              className="overlay absolute bg-whital h-full w-full top-0 left-0"
             ></div>
           </div>
         ))}
