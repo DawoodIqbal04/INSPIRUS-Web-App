@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import CasesStudies from "@/components/CaseStudies";
 import Company from "@/components/Company";
@@ -6,15 +6,13 @@ import Hero from "@/components/Hero";
 import Proposal from "@/components/Proposal";
 import Services from "@/components/Services";
 import { useEffect } from "react";
-import Lenis from '@studio-freight/lenis'
+import Lenis from "@studio-freight/lenis";
 import WorkingProcess from "@/components/WorkingProcess";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 
-
 export default function Home() {
-
   useEffect(() => {
     const lenis = new Lenis({
       duration: 0.5,

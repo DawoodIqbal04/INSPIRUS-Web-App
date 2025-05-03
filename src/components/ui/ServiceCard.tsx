@@ -52,7 +52,9 @@ const ServiceCard = ({
                   color={arrowColor}
                 />
               </div>
-              <p className={`${grotesk.className} text-${buttonText} text-lg md:flex hidden`}>
+              <p
+                className={`${grotesk.className} text-${buttonText} text-lg md:flex hidden`}
+              >
                 Service Info
               </p>
             </Link>

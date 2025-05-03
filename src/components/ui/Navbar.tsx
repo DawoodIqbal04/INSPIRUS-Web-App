@@ -58,11 +58,10 @@ const Navbar = () => {
 
     if (window.innerWidth >= 768) {
       height2 = 6 + "vh";
-    }
-    else if (window.innerWidth < 768) {
+    } else if (window.innerWidth < 768) {
       height2 = 9 + "vh";
     }
-  })
+  });
 
   const [isOpen, setIsOpen] = useState(false);
   const topline = useRef(null);

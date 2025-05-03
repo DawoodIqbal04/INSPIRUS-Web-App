@@ -19,7 +19,6 @@ const Company = () => {
         trigger: ".overlay",
         start: "top 75%",
       },
-
     });
     gsap.to(".overlays", {
       duration: 2,
@@ -61,11 +60,14 @@ const Company = () => {
         ))}
       </div>
       <div className="w-full h-[25vh] md:hidden grid grid-cols-3 gap-x-10 gap-y-8 items-center relative">
-
         {logosMob.map((logo, idx) => (
           <div
             key={idx}
-            className={` relative  ${logo.id == 1 && 'w-12 h-12'} ${logo.id == 2 && 'w-12 h-12'} ${logo.id == 4 && 'w-14 h-14'} ${logo.id == 7 && 'inset-x-32 -inset-y-7 '} `}
+            className={` relative  ${logo.id == 1 && "w-12 h-12"} ${
+              logo.id == 2 && "w-12 h-12"
+            } ${logo.id == 4 && "w-14 h-14"} ${
+              logo.id == 7 && "inset-x-32 -inset-y-7 "
+            } `}
           >
             <Image
               src={logo.src}

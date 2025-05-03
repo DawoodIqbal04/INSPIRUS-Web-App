@@ -76,9 +76,13 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className={` ${sans.className} flex md:hidden text-lg subheader2`}>
-            <p>Our digital software agency helps businesses grow and succeed online through a range of services including Web
-            Development, E-commerce Website and UI/ UX Design.
+          <div
+            className={` ${sans.className} flex md:hidden text-lg subheader2`}
+          >
+            <p>
+              Our digital software agency helps businesses grow and succeed
+              online through a range of services including Web Development,
+              E-commerce Website and UI/ UX Design.
             </p>
           </div>
         </div>
