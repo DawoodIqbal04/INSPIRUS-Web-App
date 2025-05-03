@@ -8,7 +8,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <section className="pt-20 bg-whital md:px-6">
-      <div className="w-full md:h-[80vh] min-h-[100vh] bg-dark md:rounded-t-[45px] rounded-t-4xl lg:p-14 md:p-8 p-4 pt-12">
+      <div className="w-full md:h-[80vh] h-[150vh] bg-dark md:rounded-t-[45px] rounded-t-4xl lg:p-14 md:p-8 p-4 pt-12">
         <div className="w-full flex lg:flex-row flex-col lg:gap-0 gap-5 items-center justify-between">
           <div className="flex items-center justify-center">
             <div className="overflow-hidden">
