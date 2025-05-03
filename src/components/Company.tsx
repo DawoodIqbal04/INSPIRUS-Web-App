@@ -76,7 +76,7 @@ const Company = () => {
             />
             <div
               style={{ transformOrigin: "right" }}
-              className="overlays absolute bg-accent h-full w-full top-0 left-0"
+              className="overlays absolute bg-whital h-full w-full top-0 left-0"
             ></div>
           </div>
         ))}
