@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { grotesk } from "@/font";
 import Image from "next/image";
 import Button from "./Button";
@@ -45,6 +45,25 @@ const Navbar = () => {
     });
   });
 
+  let height: string | number;
+  let height2: string | number;
+
+  useEffect(() => {
+    if (window.innerWidth >= 768) {
+      height = 45 + "vh";
+    }
+    if (window.innerWidth < 768) {
+      height = 65 + "vh";
+    }
+
+    if (window.innerWidth >= 768) {
+      height2 = 6 + "vh";
+    }
+    else if (window.innerWidth < 768) {
+      height2 = 9 + "vh";
+    }
+  })
+
   const [isOpen, setIsOpen] = useState(false);
   const topline = useRef(null);
   const bottomline = useRef(null);
@@ -67,7 +86,7 @@ const Navbar = () => {
         y: -6,
       });
       gsap.to(menuRef.current, {
-        height: 45 + "vh",
+        height,
         duration: 0.5,
         ease: "power2.inOut",
       });
@@ -98,7 +117,7 @@ const Navbar = () => {
         y: 0,
       });
       gsap.to(menuRef.current, {
-        height: 6 + "vh",
+        height: height2,
         duration: 0.5,
         ease: "power2.inOut",
       });
@@ -121,7 +140,7 @@ const Navbar = () => {
   return (
     <div
       ref={menuRef}
-      className={`navbar lg:h-28 h-[6vh] overflow-hidden fixed z-50 top-0 flex flex-col items-center gap-14 bg-whital w-full px-4 md:px-28`}
+      className={`navbar lg:h-28 md:h-[6vh] h-[9vh] overflow-hidden fixed z-50 top-0 flex flex-col items-center md:gap-14 gap-6 bg-whital w-full px-4 md:px-28`}
     >
       <div className="flex items-center justify-between w-full  lg:pt-5">
         <div className="flex items-center justify-center ">
@@ -181,7 +200,7 @@ const Navbar = () => {
       </div>
       <div
         ref={borderRef}
-        className="flex flex-col items-start lg:hidden w-full h-[30vh] rounded-2xl border border-dark "
+        className="flex flex-col items-start lg:hidden w-full md:h-[30vh] h-[48vh] rounded-2xl border border-dark "
       >
         <div className={`flex items-start ${grotesk.className} `}>
           <ul className="flex flex-col items-start justify-center gap-4 text-xl px-10 py-5 font-medium">

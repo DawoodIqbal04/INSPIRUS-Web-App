@@ -23,17 +23,17 @@ const Marker = ({ title, desc }: { title: string; desc: string }) => {
   });
 
   return (
-    <div className="flex items-center justify-start gap-10">
+    <div className="flex md:flex-row flex-col items-center justify-start md:gap-10 gap-8">
       <h1
-        className={`text-4xl ${grotesk.className} relative overflow-hidden flex items-center justify-center`}
+        className={`text-4xl ${grotesk.className} relative overflow-hidden md:text-left text-center whitespace-nowrap flex items-center justify-center`}
       >
-        <mark className="bg-primary lg:px-2 px-4 rounded-lg ">{title}</mark>
+        <mark className="bg-primary lg:px-2 md:px-4 px-2 rounded-lg ">{title}</mark>
         <div
           ref={markerRef}
           className="absolute w-full h-full bg-whital top-0"
         ></div>
       </h1>
-      <p className={`${sans.className} tracking-wide lg:w-[45%] w-[80%]`}>
+      <p className={`${sans.className} tracking-wide lg:w-[45%] md:w-[80%] w-full md:text-left text-center`}>
         {desc}
       </p>
     </div>
