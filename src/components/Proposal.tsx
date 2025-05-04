@@ -24,7 +24,6 @@ const Proposal = () => {
       scrollTrigger: {
         trigger: proposalRef.current,
         start: "top 45%",
-        markers: true,
       },
     });
     gsap.from(buttonRef.current, {
