@@ -45,7 +45,6 @@ const ServiceCard = ({
       scrollTrigger: {
         trigger: serviceRef.current,
         start: "top 60%",
-        markers: true,
       },
     });
     gsap.to(markRef.current, {
