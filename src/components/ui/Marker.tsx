@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Marker = ({ title, desc }: { title: string; desc: string }) => {
   const markerRef = useRef(null);
+  const descRef = useRef(null);
 
   useGSAP(() => {
     gsap.to(markerRef.current, {
@@ -18,6 +19,16 @@ const Marker = ({ title, desc }: { title: string; desc: string }) => {
       scrollTrigger: {
         trigger: markerRef.current,
         start: "top 80%",
+      },
+    });
+    gsap.from(descRef.current, {
+      y: 50,
+      opacity: 0.,
+      duration: 1,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: descRef.current,
+        start: "top 90%",
       },
     });
   });
@@ -35,11 +46,14 @@ const Marker = ({ title, desc }: { title: string; desc: string }) => {
           className="absolute w-full h-full bg-whital top-0"
         ></div>
       </h1>
-      <p
-        className={`${sans.className} tracking-wide lg:w-[45%] md:w-[80%] w-full md:text-left text-center`}
-      >
-        {desc}
-      </p>
+      <div className=" overflow-hidden lg:w-[45%] md:w-[80%] w-full ">
+        <p
+          ref={descRef}
+          className={`${sans.className} tracking-wide w-full md:text-left text-center`}
+        >
+          {desc}
+        </p>
+      </div>
     </div>
   );
 };
