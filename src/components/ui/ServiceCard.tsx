@@ -6,7 +6,6 @@ import React, { useRef } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { mark } from "motion/react-client";
 
 gsap.registerPlugin(ScrollTrigger);
 
