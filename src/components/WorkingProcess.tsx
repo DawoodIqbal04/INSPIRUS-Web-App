@@ -2,7 +2,6 @@ import React from "react";
 import ExtendBox from "./ui/ExtendBox";
 import { workingProcess } from "@/data/data";
 import Marker from "./ui/Marker";
-import { div } from "motion/react-client";
 
 const WorkingProcess = () => {
   return (
