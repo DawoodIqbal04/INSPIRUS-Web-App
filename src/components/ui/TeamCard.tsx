@@ -1,28 +1,110 @@
 import { grotesk, sans } from "@/font";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { TfiLinkedin } from "react-icons/tfi";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { deserialize } from "v8";
 
-const TeamCard = ({image, name, position, desc} : {image: string, name: string, position: string, desc: string}) => {
+gsap.registerPlugin(ScrollTrigger);
+
+const TeamCard = ({
+  image,
+  name,
+  position,
+  desc,
+}: {
+  image: string;
+  name: string;
+  position: string;
+  desc: string;
+}) => {
+
+  const teamRef = useRef(null);
+  const imageRef = useRef(null);
+  const nameRef = useRef(null);
+  const positionRef = useRef(null);
+  const descRef = useRef(null);
+
+
+  useGSAP(() => {
+    gsap.from(teamRef.current, {
+      y: 70,
+      opacity: 0,
+      duration: 1,
+      ease: "power1.out",
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: teamRef.current,
+        start: "top 60%",
+        markers: true,
+      },
+    });
+    
+    gsap.from(imageRef.current, {
+      y: 70,
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: teamRef.current,
+        start: "top 60%",
+      },
+    })
+      
+    gsap.from(nameRef.current, {
+        y: 70,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: teamRef.current,
+          start: "top 60%",
+        },
+      })
+      
+      gsap.from(positionRef.current, {
+        y: 70,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: teamRef.current,
+          start: "top 60%",
+        },
+      })
+      
+      gsap.from(descRef.current, {
+        y: 70,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: teamRef.current,
+          start: "top 60%",
+        },
+      })
+  });
+
   return (
-    <div className="teamCard lg:w-[30vw] lg:h-[65vh] rounded-[45px] bg-[#e8e8e8] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] ">
+    <div ref={teamRef} className="lg:w-[30vw] lg:h-[65vh] rounded-[45px] bg-[#e8e8e8] p-14 flex flex-col items-center gap-5 border border-dark shadow-[0_5px_rgba(0,0,0,0.8)] ">
       <div className="h-[50%] w-full flex gap-28 md:items-start md:justify-between ">
         <div className="flex md:flex-row flex-col items-end md:gap-5 gap-1 w-full">
-          <Image
-            src={image}
-            alt={''}
-            height={100}
-            width={100}
-          />
+          <Image ref={imageRef} src={image} alt={""} height={100} width={100} />
           <div className="flex flex-col items-start w-full">
-            <div className="">
-              <h4 className={`${grotesk.className} text-lg font-medium `}>
+            <div className="overflow-hidden w-max">
+              <h4 ref={nameRef} className={`${grotesk.className} text-lg leading-5 font-medium `}>
                 {name}
               </h4>
             </div>
-            <div className="">
-              <p className={`${sans.className} text-sm`}>{position}</p>
+            <div className="overflow-hidden w-max">
+              <p ref={positionRef} className={`${sans.className} text-sm`}>{position}</p>
             </div>
           </div>
         </div>
@@ -37,8 +119,8 @@ const TeamCard = ({image, name, position, desc} : {image: string, name: string, 
           </Link>
         </div>
       </div>
-      <div className=" h-[50%] w-full border-t border-dark ">
-        <p className={`${grotesk.className} mt-7`}>{desc} </p>
+      <div className=" min-h-[50%] w-full border-t border-dark ">
+        <p ref={descRef} className={`${grotesk.className} mt-7`}>{desc}</p>
       </div>
     </div>
   );
