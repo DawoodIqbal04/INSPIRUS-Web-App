@@ -145,7 +145,7 @@ const ExtendBox = ({
               </span>
             </div>
           </div>
-          <div className="absolute top-43 md:mx-16 mx-8 border-t-2 pt-7 border-dark">
+          <div className="absolute top-43 md:mx-16 mx-8 border-t-2 pt-7 mt-2 border-dark">
             <p>{desc}</p>
           </div>
         </div>

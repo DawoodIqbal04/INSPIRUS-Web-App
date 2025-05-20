@@ -6,7 +6,6 @@ import { TfiLinkedin } from "react-icons/tfi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { deserialize } from "v8";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +25,7 @@ const TeamCard = ({
   const imageRef = useRef(null);
   const nameRef = useRef(null);
   const positionRef = useRef(null);
+  const iconRef = useRef(null);
   const descRef = useRef(null);
 
 
@@ -39,7 +39,6 @@ const TeamCard = ({
       scrollTrigger: {
         trigger: teamRef.current,
         start: "top 60%",
-        markers: true,
       },
     });
     
@@ -68,6 +67,18 @@ const TeamCard = ({
       })
       
       gsap.from(positionRef.current, {
+        y: 70,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: teamRef.current,
+          start: "top 60%",
+        },
+      })
+
+      gsap.from(iconRef.current, {
         y: 70,
         opacity: 0,
         duration: 1,
@@ -108,7 +119,7 @@ const TeamCard = ({
             </div>
           </div>
         </div>
-        <div className="w-max">
+        <div ref={iconRef}>
           <Link
             href={
               "https://www.linkedin.com/in/muhammad-dawood-iqbal-bb469b29a/"
@@ -119,7 +130,7 @@ const TeamCard = ({
           </Link>
         </div>
       </div>
-      <div className=" min-h-[50%] w-full border-t border-dark ">
+      <div className=" min-h-[50%] w-full overflow-hidden border-t border-dark ">
         <p ref={descRef} className={`${grotesk.className} mt-7`}>{desc}</p>
       </div>
     </div>
