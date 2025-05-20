@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Marker from "./ui/Marker";
 import { teamMembers } from "@/data/data";
 import TeamCard from "./ui/TeamCard";
