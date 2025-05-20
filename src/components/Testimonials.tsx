@@ -23,7 +23,6 @@ const Testimonials = () => {
       scrollTrigger: {
         trigger: testRef.current,
         start: 'top 20%',
-        markers: true,
       }
 
     })
