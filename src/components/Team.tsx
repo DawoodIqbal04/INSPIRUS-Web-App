@@ -1,21 +1,9 @@
 import React, { useRef } from "react";
 import Marker from "./ui/Marker";
 import { teamMembers } from "@/data/data";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TeamCard from "./ui/TeamCard";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Team = () => {
-  const teamRef = useRef(null);
-  const imageRef = useRef(null);
-  const nameRef = useRef(null);
-  const descRef = useRef(null);
-  const positionRef = useRef(null);
-  const linkRef = useRef(null);
-
 
   return (
     <section className="py-20">
