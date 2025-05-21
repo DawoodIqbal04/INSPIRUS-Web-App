@@ -4,6 +4,8 @@
 
 Live site: [https://inspirusagency.vercel.app](https://inspirusagency.vercel.app)
 
+![Banner Image](public/Banner.png)
+
 ## Tech Stack
 
 - **Next.js** – React framework for server-side rendering and routing
